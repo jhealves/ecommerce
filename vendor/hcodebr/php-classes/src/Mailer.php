@@ -8,7 +8,7 @@ class Mailer{
 
     const USERNAME = "jhetechinfo@gmail.com";
     const PASSWORD = "a8765432a";
-    const NAME_FROM = "Jeberson";
+    const NAME_FROM = "jhe";
 
     private $mail;
 
@@ -31,7 +31,7 @@ class Mailer{
         $html =$tpl->draw($tplName, true);
 
                 //Create a new PHPMailer instance
-        $this->mail = new \PHPMailer\PHPMailer\PHPMailer();
+        $this->mail = new \PHPMailer;
 
         //Tell PHPMailer to use SMTP
         $this->mail->isSMTP();
